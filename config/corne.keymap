@@ -50,7 +50,7 @@
    &kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &kp UNDER  &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp RSHFT
                          &kp LGUI &trans  &tp LALT RET     &tp LC(LS(LA(LGUI))) SPACE &kp BSPC  &trans
                         >;
-                }
+                };
 
                 layer_above {
 // -----------------------------------------------------------------------------------------
