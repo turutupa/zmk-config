@@ -20,7 +20,7 @@
             bindings = <&kp>, <&kp>;
           }; 
 
-        hp: tap_preferred {
+        hp: hold_preferred {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_PREFERRED";
             #binding-cells = <2>;
