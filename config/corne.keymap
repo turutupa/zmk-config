@@ -91,12 +91,12 @@
 // |       |    |  7  |  8  |  9  |          |            |      |      |      |      |       |     |
 // |       |    |  4  |  5  |  6  |          |            | LEFT | DOWN |  UP  | RIGHT|       |     |
 // |       |    |  1  |  2  |  3  |          |            |      |      |      |      |       |
-//                    |  0  |     |          |            |      |      |      |
+//                    |     |  0  |          |            |      |      |      |
                         bindings = <
    &trans      &trans   &kp N7 &kp N8   &kp N9   &trans     &trans   &trans   &trans &trans    &trans &trans
    &trans      &trans   &kp N4 &kp N5   &kp N6   &trans     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &bt BT_CLR  &trans   &kp N1 &kp N2   &kp N3   &trans     &trans   &trans   &trans &trans    &trans &trans
-                          	    &trans   &kp N0   &trans  &trans &trans   &trans
+                        &tog GAMING  &kp N0  &trans         &trans &trans   &trans
                         >;
                 };
 
@@ -111,7 +111,7 @@
    &kp TAB         &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P &kp BSPC   
    &kp LCTRL       &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT       &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT 
-                   &kp Y &kp U &kp I &tp LALT RET  &mo 2 &mo RAISE &trans
+                   &kp Y &kp U &kp I &tp LALT RET  &mo 2 &mo RAISE &mo NAV
                         >;
                 };
         };
