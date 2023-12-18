@@ -46,12 +46,12 @@
 // |    TAB   |  Q  |  W  |   E   |  R  |      T     |   |     Y      |  U   |  I  |  O  |  P  |   BKSP   |
 // | CTRL/ESC |  A  |  S  |   D   |  F  |      G     |   |     H      |  J   |  K  |  L  |  ;  |   ' |
 // |   SHFT   |  Z  |  X  |   C   |  V  |      B     |   |     N      |  M   |  ,  |  .  |  /  |   SHFT   |
-//                  | HYPER | LWR |   GUI/SPC        |   |   ALT/ENT  |  RSE | LALT|
+//                        | LOWER | SPC |     LGUI   |   |   RAISE    | LALT / RET | MOV |
                         bindings = <
    &kp TAB         &kp Q &kp W  &kp E     &kp R &kp T         &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC   
    &hp LCTRL ESC   &kp A &kp S  &kp D     &kp F &kp G         &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT       &kp Z &kp X  &kp C     &kp V &kp B         &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT 
-                   &kp LC(LALT) &mo LOWER &tp LGUI SPACE      &tp LALT RET &mo RAISE &mo NAV 
+                         &mo LOWER &kp SPACE &kp LGUI         &mo RAISE &tp LALT RET &mo NAV 
                         >;
                 };
 
@@ -73,7 +73,7 @@
 // -----------------------------------------------------------------------------------------
 // |   ~   | !  |  @  |  #  |  $  |    %     |            |    F6   |  F7  |  F8  |  F9  |  F10  | F11 |
 // |  CAPS | 1  |  2  |  3  |  4  |    5     |            |    6    |   7  |  8   |   9  |  0    |     |
-// | LSHFT |    |     |     |     |          |            |  BTCLR  |      |      |      |       |
+// | LSHFT |    |     |     |     |          |            |         |      |      |      |       |
 //                    |     |     |          |            |         |      |      |
                         bindings = <
    &kp TILDE   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT  &kp F6      &kp F7   &kp F8  &kp F9     &kp F10 &kp BSPC
@@ -87,7 +87,7 @@
 // -----------------------------------------------------------------------------------------
 // |       |    |  7  |  8  |  9  |          |            |      |      |      |      |       |     |
 // |       |    |  4  |  5  |  6  |          |            | LEFT | DOWN |  UP  | RIGHT|       |     |
-// |       |    |  1  |  2  |  3  |          |            |      |      |      |      |       |
+// | BLT_CLR |  |  1  |  2  |  3  |          |            |      |      |      |      |       |
 //                    |     |  0  |          |            |      |      |      |
                         bindings = <
    &trans      &trans   &kp N7 &kp N8   &kp N9   &trans     &trans   &trans   &trans &trans    &trans &trans
