@@ -46,12 +46,12 @@
 // |    TAB   |  Q  |  W  |   E   |  R  |      T     |   |     Y      |  U   |  I  |  O  |  P  |   BKSP   |
 // | CTRL/ESC |  A  |  S  |   D   |  F  |      G     |   |     H      |  J   |  K  |  L  |  ;  |   ' |
 // |   SHFT   |  Z  |  X  |   C   |  V  |      B     |   |     N      |  M   |  ,  |  .  |  /  |   SHFT   |
-//                        | LOWER | SPC |     LGUI   |   |   RAISE    | LALT / RET | MOV |
+//                        | LOWER | LGUI |     SPC   |   |    NAV     | LALT / RET | RAISE |
                         bindings = <
    &kp TAB         &kp Q &kp W  &kp E     &kp R &kp T         &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC   
    &hp LCTRL ESC   &kp A &kp S  &kp D     &kp F &kp G         &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT       &kp Z &kp X  &kp C     &kp V &kp B         &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT 
-                         &mo LOWER &kp SPACE &kp LGUI         &mo RAISE &tp LALT RET &mo NAV 
+                         &kp LGUI &&mo LOWER kp SPACE         &tp LALT RET &mo RAISE &mo NAV  
                         >;
                 };
 
@@ -65,7 +65,7 @@
    &trans     &kp F1        &kp F2       &kp F3       &kp F4               &kp F5        &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSLH
    &trans     &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP         &kp C_PP      &kp MINUS  &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &kp PIPE
    &kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3         &bt BT_SEL 4  &kp UNDER  &kp PLUS  &kp TILDE       &kp LBRC &kp RBRC &kp RSHFT
-                            &kp LC(LALT) &trans       &tp LGUI SPACE       &tp LALT RET &kp BSPC &kp DEL
+                            &trans &trans       &trans       &trans &trans &trans
                         >;
                 };
 
@@ -73,7 +73,7 @@
 // -----------------------------------------------------------------------------------------
 // |   ~   | !  |  @  |  #  |  $  |    %     |            |    F6   |  F7  |  F8  |  F9  |  F10  | F11 |
 // |  CAPS | 1  |  2  |  3  |  4  |    5     |            |    6    |   7  |  8   |   9  |  0    |     |
-// | LSHFT |    |     |     |     |          |            |         |      |      |      |       |
+// | LSHFT |    |     |     |     | BLT_CLR  |            |         |      |      |      |       |
 //                    |     |     |          |            |         |      |      |
                         bindings = <
    &kp TILDE   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT  &kp F6      &kp F7   &kp F8  &kp F9     &kp F10 &kp BSPC
