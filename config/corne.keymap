@@ -41,31 +41,31 @@
                 combo_open_paren {
                         key-positions = <8 9>;  
                         bindings = <LEFTPAREN>;
-                }
+                };
                 combo_close_paren {
                         key-positions = <9 10>;  
                         bindings = <RIGHTPAREN>;
-                }
+                };
 
                 // combos for brackets
                 combo_open_bracket {
                         key-positions = <20 21>;  
                         bindings = <LEFTBRACKET>;
-                }
+                };
                 combo_close_bracket {
                         key-positions = <21 22>;  
                         bindings = <RIGHTBRACKET>;
-                }
+                };
 
                 // combos for braces
                 combo_open_brace {
                         key-positions = <32 33>;  
                         bindings = <LEFTSQUAREBRACE>;
-                }
+                };
                 combo_close_brace {
                         key-positions = <33 34>;  
                         bindings = <RIGHTSQUAREBRACE>;
-                }                
+                };               
         };
 
         behaviors {
