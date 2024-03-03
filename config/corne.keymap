@@ -31,6 +31,12 @@
                         bindings = <EQUAL>;
                 };
 
+                // combos for underscore
+                combo_underscore {
+                        key-positions = <31 32>;  
+                        bindings = <UNDERSCORE>;
+                };
+
                 // combos for parenthesis
                 combo_open_paren {
                         key-positions = <8 9>;  
