@@ -15,59 +15,6 @@
 #define GAMING  4
 
 / {
-        combos {
-                compatible = "zmk,combos";
-
-                // combos for escape
-                combo_esc {
-                        timeout-ms = <50>;
-                        key-positions = <0 1>;
-                        bindings = <&kp ESC>;
-                };
-
-                // combos for equal
-                combo_equal {
-                        key-positions = <19 20>;  
-                        bindings = <&kp EQUAL>;
-                };
-
-                // combos for underscore
-                combo_underscore {
-                        key-positions = <31 32>;  
-                        bindings = <&kp UNDERSCORE>;
-                };
-
-                // combos for parenthesis
-                combo_open_paren {
-                        key-positions = <8 9>;  
-                        bindings = <&kp LPAR>;
-                };
-                combo_close_paren {
-                        key-positions = <9 10>;  
-                        bindings = <&kp RPAR>;
-                };
-
-                // combos for brackets
-                combo_open_bracket {
-                        key-positions = <20 21>;  
-                        bindings = <&kp LBKT>;
-                };
-                combo_close_bracket {
-                        key-positions = <21 22>;  
-                        bindings = <&kp RBKT>;
-                };
-
-                // combos for braces
-                combo_open_brace {
-                        key-positions = <32 33>;  
-                        bindings = <&kp LBRC>;
-                };
-                combo_close_brace {
-                        key-positions = <33 34>;  
-                        bindings = <&kp RBRC>;
-                };               
-        };
-
         behaviors {
           tp: tap_preferred {
             compatible = "zmk,behavior-hold-tap";
