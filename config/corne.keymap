@@ -79,10 +79,10 @@
             //                    |     |     |          |            |         |      |      |
 
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp GRAVE       &kp PIPE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &kp DELETE
-&trans     &trans    &trans  &trans    &trans    &trans       &kp UNDERSCORE  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&trans     &trans    &trans  &trans    &trans    &trans       &kp MINUS       &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
-                             &trans    &trans    &trans       &trans          &trans     &trans
+&kp TILDE  &kp EXCL       &kp AT                &kp HASH  &kp DLLR               &kp PRCNT           &kp GRAVE       &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &trans    &trans
+&trans     &kp LESS_THAN  &kp LEFT_PARENTHESIS  &trans    &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &kp UNDERSCORE  &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE    &kp PIPE  &kp ENTER
+&trans     &trans         &trans                &trans    &kp PLUS               &trans              &kp MINUS       &kp PLUS          &kp LEFT_BRACE  &kp RIGHT_BRACE    &trans    &trans
+                                                &trans    &trans                 &trans              &trans          &trans            &trans
             >;
         };
 
@@ -94,7 +94,7 @@
             //                    |     |  0  |          |            |      |      |      |
 
             bindings = <
-&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &kp DELETE
 &trans      &trans        &trans        &trans        &trans        &trans    &trans        &trans  &trans  &trans  &trans  &trans
 &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans        &trans  &trans  &trans  &trans  &trans
                                         &tog GAMING   &kp N0        &trans    &trans        &trans  &trans
