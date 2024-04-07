@@ -64,10 +64,10 @@
             //                       |  GUI  |       | ALT/ENT    |     | HYPER/SPACE | BKSP| DEL |
 
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
-&trans  &kp C_PREV    &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP        &kp MINUS  &kp EQUAL  &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp UNDER  &kp PLUS   &kp TILDE        &kp LBRC  &kp RBRC  &trans
-                                    &trans        &trans        &trans          &trans     &trans     &trans
+&trans  &kp F1      &kp N7      &kp N8             &kp N9           &kp F5      &kp CARET  &kp AMPERSAND  &kp KP_MULTIPLY  &kp LPAR      &kp RPAR  &kp BSLH
+&trans  &kp C_PREV  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PP    &kp MINUS  &kp NUMBER_4   &kp N5           &kp NUMBER_6  &kp RBKT  &kp PIPE
+&trans  &trans      &trans      &trans             &trans           &trans      &kp UNDER  &kp NUMBER_1   &kp NUMBER_2     &kp NUMBER_3  &kp RBRC  &trans
+                                &trans             &trans           &trans      &trans     &trans         &trans
             >;
         };
 
@@ -79,10 +79,10 @@
             //                    |     |     |          |            |         |      |      |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp GRAVE       &kp LEFT_BRACKET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp F10  &trans
-&trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp UNDERSCORE  &kp EQUAL         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N0   &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS       &kp PLUS          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans   &trans
-                          &trans    &trans    &trans       &trans          &trans            &trans
+&kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp GRAVE       &kp AMPS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp F10  &trans
+&trans     &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp UNDERSCORE  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N0   &trans
+&trans     &trans    &trans  &trans    &trans    &trans       &kp MINUS       &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans   &trans
+                             &trans    &trans    &trans       &trans          &trans     &trans
             >;
         };
 
@@ -94,10 +94,10 @@
             //                    |     |  0  |          |            |      |      |      |
 
             bindings = <
-&trans      &trans  &kp N7  &kp N8       &kp N9  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-&trans      &trans  &kp N4  &kp N5       &kp N6  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&bt BT_CLR  &trans  &kp N1  &kp N2       &kp N3  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-                            &tog GAMING  &kp N0  &trans    &trans    &trans    &trans
+&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans      &trans        &trans        &trans        &trans        &trans    &kp LEFT      &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans        &trans    &trans  &trans     &trans  &trans
+                                        &tog GAMING   &kp N0        &trans    &trans        &trans    &trans
             >;
         };
 
