@@ -64,10 +64,10 @@
             //                       |  GUI  |       | ALT/ENT    |     | HYPER/SPACE | BKSP| DEL |
 
             bindings = <
-&trans  &trans      &trans      &trans             &trans           &trans      &kp CARET  &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp C_PREV  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PP    &trans     &kp LEFT       &kp DOWN         &kp UP_ARROW          &kp RIGHT              &kp DELETE
-&trans  &trans      &trans      &trans             &trans           &trans      &trans     &trans         &trans           &trans                &trans                 &trans
-                                &trans             &trans           &trans      &trans     &trans         &trans
+&trans  &trans      &trans      &trans             &trans           &trans      &trans  &trans    &trans    &trans        &trans     &trans
+&trans  &kp C_PREV  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PP    &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp DELETE
+&trans  &trans      &trans      &trans             &trans           &trans      &trans  &trans    &trans    &trans        &trans     &trans
+                                &trans             &trans           &trans      &trans  &trans    &trans
             >;
         };
 
