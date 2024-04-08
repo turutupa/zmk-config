@@ -49,10 +49,40 @@
             //                        | LOWER | LGUI |     SPC   |   |    NAV     | LALT / RET | RAISE |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y         &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&hp LCTRL ESC  &kp A  &kp S  &kp D     &kp F      &kp G        &kp H         &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                             &kp LGUI  &mo LOWER  &kp SPACE    &tp LALT RET  &mo RAISE  &mo NAV
+&kp TAB        &kp Q  &kp W  &kp E         &kp R          &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&hp LCTRL ESC  &kp A  &kp S  &kp D         &kp F          &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT      &kp Z  &kp X  &kp C         &kp V          &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                             &kp LEFT_ALT  &kp LEFT_META  &kp SPACE    &kp ENTER  &mo 1  &mo 2
+            >;
+        };
+
+        RAISE {
+            // -----------------------------------------------------------------------------------------
+            // |   ~   | !  |  @  |  #  |  $  |    %     |            |    F6   |  F7  |  F8  |  F9  |  F10  | F11 |
+            // |  CAPS | 1  |  2  |  3  |  4  |    5     |            |    6    |   7  |  8   |   9  |  0    |     |
+            // | LSHFT |    |     |     |     | BLT_CLR  |            |         |      |      |      |       |
+            //                    |     |     |          |            |         |      |      |
+
+            bindings = <
+&kp TILDE  &kp EXCL   &kp AT                &kp HASH           &kp DLLR               &kp PRCNT       &kp CARET      &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &kp PLUS  &trans
+&trans     &kp MINUS  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp ASTERISK    &kp AMPERSAND  &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE    &kp PIPE  &kp ENTER
+&trans     &trans     &trans                &trans             &trans                 &trans          &kp MINUS      &kp LESS_THAN     &trans          &kp GREATER_THAN   &trans    &trans
+                                            &trans             &trans                 &trans          &trans         &trans            &trans
+            >;
+        };
+
+        NUMS_NAV {
+            // -----------------------------------------------------------------------------------------
+            // |       |    |  7  |  8  |  9  |          |            |      |      |      |      |       |     |
+            // |       |    |  4  |  5  |  6  |          |            | LEFT | DOWN |  UP  | RIGHT|       |     |
+            // | BLT_CLR |  |  1  |  2  |  3  |          |            |      |      |      |      |       |
+            //                    |     |  0  |          |            |      |      |      |
+
+            bindings = <
+&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7    &kp N8    &kp N9        &kp N0     &kp DELETE
+&trans      &trans        &trans        &trans        &trans        &trans    &trans        &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans        &trans    &trans    &trans        &trans     &trans
+                                        &tog 5        &kp N0        &trans    &trans        &trans    &trans
             >;
         };
 
@@ -71,36 +101,6 @@
             >;
         };
 
-        RAISE {
-            // -----------------------------------------------------------------------------------------
-            // |   ~   | !  |  @  |  #  |  $  |    %     |            |    F6   |  F7  |  F8  |  F9  |  F10  | F11 |
-            // |  CAPS | 1  |  2  |  3  |  4  |    5     |            |    6    |   7  |  8   |   9  |  0    |     |
-            // | LSHFT |    |     |     |     | BLT_CLR  |            |         |      |      |      |       |
-            //                    |     |     |          |            |         |      |      |
-
-            bindings = <
-&kp TILDE  &kp EXCL   &kp AT                &kp HASH           &kp DLLR               &kp PRCNT    &kp CARET      &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &kp PLUS  &trans
-&trans     &kp MINUS  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &trans       &kp AMPERSAND  &kp LEFT_BRACE    &kp EQUAL       &kp RIGHT_BRACE    &kp PIPE  &kp ENTER
-&trans     &trans     &trans                &trans             &trans                 &trans       &kp MINUS      &kp LESS_THAN     &trans          &kp GREATER_THAN   &trans    &trans
-                                            &trans             &trans                 &trans       &trans         &trans            &trans
-            >;
-        };
-
-        NUMS_NAV {
-            // -----------------------------------------------------------------------------------------
-            // |       |    |  7  |  8  |  9  |          |            |      |      |      |      |       |     |
-            // |       |    |  4  |  5  |  6  |          |            | LEFT | DOWN |  UP  | RIGHT|       |     |
-            // | BLT_CLR |  |  1  |  2  |  3  |          |            |      |      |      |      |       |
-            //                    |     |  0  |          |            |      |      |      |
-
-            bindings = <
-&trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7    &kp N8    &kp N9        &kp N0     &kp DELETE
-&trans      &trans        &trans        &trans        &trans        &trans    &trans        &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans        &trans    &trans    &trans        &trans     &trans
-                                        &tog GAMING   &kp N0        &trans    &trans        &trans    &trans
-            >;
-        };
-
         GAMING {
             // -----------------------------------------------------------------------------------------
             // |    TAB   |  Q  |  W  |   E   |  R  |      T     |   |     Y      |  U   |  I  |  O  |  P  |   BKSP   |
@@ -109,10 +109,10 @@
             //                        |   Y   |   U |      I     |   |  ALT/ENT   | RSE  | LALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y    &kp U    &kp I        &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H    &kp J    &kp K        &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N    &kp M    &kp COMMA    &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp SEMI  &kp LALT  &kp SPACE    &kp RET  &kp ESC  &tog GAMING
+&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y    &kp U    &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H    &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp SEMI  &kp LALT  &kp SPACE    &kp RET  &kp ESC  &tog 5
             >;
         };
     };
