@@ -38,6 +38,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        TogGaming {
+            bindings = <&tog 3>;
+            key-positions = <16 17 18 19>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -82,7 +91,22 @@
 &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7    &kp N8    &kp N9        &kp N0     &kp DELETE
 &trans      &trans        &trans        &trans        &trans        &trans    &trans        &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
 &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans        &trans    &trans    &trans        &trans     &trans
-                                        &tog 5        &kp N0        &trans    &trans        &trans    &trans
+                                        &trans        &trans        &trans    &trans        &trans    &trans
+            >;
+        };
+
+        GAMING {
+            // -----------------------------------------------------------------------------------------
+            // |    TAB   |  Q  |  W  |   E   |  R  |      T     |   |     Y      |  U   |  I  |  O  |  P  |   BKSP   |
+            // |   CTRL   |  A  |  S  |   D   |  F  |      G     |   |     H      |  J   |  K  |  L  |  ;  |   ' |
+            // |   SHFT   |  Z  |  X  |   C   |  V  |      B     |   |     N      |  M   |  ,  |  .  |  /  |   SHFT   |
+            //                        |   Y   |   U |      I     |   |  ALT/ENT   | RSE  | LALT |
+
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E     &kp R       &kp T        &kp Y    &kp U    &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F       &kp G        &kp H    &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V       &kp B        &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp SEMI  &kp PERIOD  &kp SPACE    &kp RET  &kp ESC  &tog 0
             >;
         };
 
@@ -98,21 +122,6 @@
 &trans  &kp C_PREV  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PP    &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp DELETE
 &trans  &trans      &trans      &trans             &trans           &trans      &trans  &trans    &trans    &trans        &trans     &trans
                                 &trans             &trans           &trans      &trans  &trans    &trans
-            >;
-        };
-
-        GAMING {
-            // -----------------------------------------------------------------------------------------
-            // |    TAB   |  Q  |  W  |   E   |  R  |      T     |   |     Y      |  U   |  I  |  O  |  P  |   BKSP   |
-            // |   CTRL   |  A  |  S  |   D   |  F  |      G     |   |     H      |  J   |  K  |  L  |  ;  |   ' |
-            // |   SHFT   |  Z  |  X  |   C   |  V  |      B     |   |     N      |  M   |  ,  |  .  |  /  |   SHFT   |
-            //                        |   Y   |   U |      I     |   |  ALT/ENT   | RSE  | LALT |
-
-            bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R       &kp T        &kp Y    &kp U    &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F       &kp G        &kp H    &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V       &kp B        &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp SEMI  &kp PERIOD  &kp SPACE    &kp RET  &kp ESC  &tog 5
             >;
         };
     };
