@@ -58,10 +58,10 @@
             //                        | LOWER | LGUI |     SPC   |   |    NAV     | LALT / RET | RAISE |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E         &kp R          &kp T        &kp Y           &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&hp LCTRL ESC  &kp A  &kp S  &kp D         &kp F          &kp G        &kp H           &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&mo 1          &kp Z  &kp X  &kp C         &kp V          &kp B        &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                             &kp LEFT_ALT  &kp LEFT_META  &kp SPACE    &kp LEFT_SHIFT  &mo 1  &mo 2
+&kp TAB    &kp Q  &kp W  &kp E         &kp R                 &kp T        &kp Y           &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D         &kp F                 &kp G        &kp H           &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&mo 1      &kp Z  &kp X  &kp C         &kp V                 &kp B        &kp N           &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
+                         &kp LEFT_ALT  &tp LEFT_META ESCAPE  &kp SPACE    &kp LEFT_SHIFT  &mo 1  &mo 2
             >;
         };
 
@@ -73,10 +73,10 @@
             //                    |     |     |          |            |         |      |      |
 
             bindings = <
-&kp GRAVE  &kp EXCL   &kp AT  &kp HASH          &kp DLLR           &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans     &kp TILDE  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON    &kp PLUS   &kp MINUS      &kp EQUAL      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-&trans     &trans     &trans  &trans            &trans             &trans       &trans     &kp UNDER      &kp LESS_THAN  &kp GREATER_THAN      &kp BACKSLASH          &trans
-                              &trans            &trans             &trans       &trans     &trans         &trans
+&kp GRAVE  &kp EXCL   &kp AT    &kp HASH          &kp DLLR           &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans     &kp COLON  &kp PIPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE    &kp PLUS   &kp MINUS      &kp EQUAL      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES
+&trans     &trans     &trans    &trans            &trans             &trans       &trans     &kp UNDER      &kp LESS_THAN  &kp GREATER_THAN      &kp BACKSLASH          &trans
+                                &trans            &trans             &trans       &trans     &trans         &trans
             >;
         };
 
