@@ -73,10 +73,10 @@
             //                    |     |     |          |            |         |      |      |
 
             bindings = <
-&kp GRAVE  &kp EXCL   &kp AT    &kp HASH          &kp DLLR           &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans     &kp COLON  &kp PIPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE    &kp PLUS   &kp MINUS      &kp EQUAL      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES
-&trans     &trans     &trans    &trans            &trans             &trans       &trans     &kp UNDER      &kp LESS_THAN  &kp GREATER_THAN      &kp BACKSLASH          &trans
-                                &trans            &trans             &trans       &trans     &trans         &trans
+&kp GRAVE  &kp EXCL       &kp AT    &kp HASH          &kp DLLR           &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans     &kp MINUS      &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE    &kp PIPE   &kp EQUAL      &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp COLON              &kp DOUBLE_QUOTES
+&trans     &kp BACKSLASH  &trans    &trans            &trans             &trans       &trans     &kp UNDER      &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &trans
+                                    &trans            &trans             &trans       &trans     &trans         &trans
             >;
         };
 
