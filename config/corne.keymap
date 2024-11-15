@@ -109,20 +109,5 @@
                          &kp SEMI  &kp PERIOD  &kp SPACE    &kp RET  &kp ESC  &tog 0
             >;
         };
-
-        LOWER {
-            // -----------------------------------------------------------------------------------------
-            // |      |   F1  |  F2  |  F3   |  F4   |    F5      |     |   ^   |  &  |  *  |  (  |  )  |   \   |
-            // |      |  Prev | Next | Vol - | Vol + | Play/Pause |     |   -   |  =  |  `  |  [  |  ]  |  "|"  |
-            // | SHFT |  BT1  | BT2  | BT3   | BT4   |     BT5    |     |   _   |  +  |  ~  |  {  |  }  | RSHFT |
-            //                       |  GUI  |       | ALT/ENT    |     | HYPER/SPACE | BKSP| DEL |
-
-            bindings = <
-&trans  &trans      &trans      &trans             &trans           &trans      &trans  &trans    &trans    &trans        &trans     &trans
-&trans  &kp C_PREV  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PP    &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp DELETE
-&trans  &trans      &trans      &trans             &trans           &trans      &trans  &trans    &trans    &trans        &trans     &trans
-                                &trans             &trans           &trans      &trans  &trans    &trans
-            >;
-        };
     };
 };
