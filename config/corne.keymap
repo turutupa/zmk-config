@@ -73,10 +73,10 @@
             //                    |     |  0  |          |            |      |      |      |
 
             bindings = <
-&trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans          &kp MINUS     &kp PLUS      &kp EQUAL     &kp ASTRK     &trans        &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT             &kp PIPE               &trans
-&kp LEFT_SHIFT  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &trans     &trans         &trans        &trans                &trans                 &trans
-                                            &trans        &trans        &trans        &trans     &trans         &trans
+&trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0    &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp PIPE  &trans
+&kp LEFT_SHIFT  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &trans        &trans    &trans        &trans     &trans    &trans
+                                            &trans        &trans        &trans        &trans        &trans    &trans
             >;
         };
 
@@ -88,10 +88,10 @@
             //                    |     |     |          |            |         |      |      |
 
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT                &kp HASH          &kp DLLR        &kp PRCNT        &kp CARET       &kp AMPERSAND    &kp ASTRK          &kp EQUAL              &trans  &trans
-&trans     &kp LT    &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp BACKSLASH    &kp SLASH       &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GT  &kp ENTER
-&trans     &trans    &trans                &trans            &trans          &trans           &kp UNDERSCORE  &kp MINUS        &kp PLUS           &kp EQUAL              &trans  &kp TILDE
-                                           &trans            &trans          &trans           &trans          &trans           &trans
+&trans  &kp EXCL  &kp AT                &kp HASH          &kp DLLR        &kp PRCNT        &kp CARET       &kp AMPERSAND    &kp ASTRK          &kp EQUAL              &trans  &trans
+&trans  &kp LT    &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp BACKSLASH    &kp SLASH       &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GT  &kp GRAVE
+&trans  &trans    &trans                &trans            &trans          &trans           &kp UNDERSCORE  &kp MINUS        &kp PLUS           &kp EQUAL              &trans  &kp TILDE
+                                        &trans            &trans          &trans           &trans          &trans           &trans
             >;
         };
     };
