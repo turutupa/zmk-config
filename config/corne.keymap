@@ -88,10 +88,10 @@
             //                    |     |     |          |            |         |      |      |
 
             bindings = <
-&kp GRAVE  &kp EXCL       &kp AT        &kp HASH      &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans     &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT             &kp N0                 &kp ENTER
-&trans     &kp BACKSLASH  &trans        &trans        &trans        &trans       &trans     &kp UNDER      &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-                                        &trans        &trans        &trans       &trans     &trans         &trans
+&kp GRAVE  &kp EXCL  &kp AT                &kp HASH          &kp DLLR        &kp PRCNT        &kp CARET       &kp AMPERSAND    &kp ASTRK          &kp EQUAL              &trans  &trans
+&trans     &kp LT    &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp BACKSLASH    &kp SLASH       &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GT  &kp ENTER
+&trans     &trans    &trans                &trans            &trans          &trans           &kp UNDERSCORE  &kp MINUS        &kp PLUS           &kp EQUAL              &trans  &kp TILDE
+                                           &trans            &trans          &trans           &trans          &trans           &trans
             >;
         };
     };
