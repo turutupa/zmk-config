@@ -89,8 +89,8 @@
 
             bindings = <
 &trans  &kp EXCL   &kp AT                &kp HASH        &kp DLLR          &kp PRCNT        &kp CARET  &kp AMPERSAND      &kp ASTRK        &kp UNDERSCORE         &kp PLUS   &trans
-&trans  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp BACKSLASH    &kp SLASH  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp DOUBLE_QUOTES
-&trans  &trans     &trans                &trans          &trans            &trans           &trans     &kp MINUS          &kp LT           &kp GT                 &trans     &kp TILDE
+&trans  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp BACKSLASH    &kp SLASH  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp TILDE
+&trans  &trans     &trans                &trans          &trans            &trans           &trans     &kp MINUS          &kp LT           &kp GT                 &trans     &trans
                                          &trans          &trans            &trans           &trans     &trans             &trans
             >;
         };
