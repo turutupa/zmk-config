@@ -73,10 +73,10 @@
             //                    |     |     |          |            |         |      |      |
 
             bindings = <
-&kp GRAVE     &kp EXCL   &kp AT            &kp HASH        &kp DLLR              &kp PRCNT        &kp CARET  &kp AMPERSAND          &kp ASTRK        &kp UNDERSCORE     &trans     &trans
-&kp TILDE     &kp MINUS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp BACKSLASH    &kp PLUS   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp EQUAL  &kp PIPE
-&kp CAPSLOCK  &trans     &trans            &trans          &kp PAGE_UP           &kp HOME         &kp END    &kp PAGE_DOWN          &kp LT           &kp GT             &trans     &trans
-                                           &trans          &trans                &trans           &trans     &trans                 &trans
+&kp GRAVE     &kp EXCL   &kp AT                &kp HASH        &kp DLLR          &kp PRCNT        &kp CARET  &kp AMPERSAND      &kp ASTRK        &kp UNDERSCORE         &trans     &trans
+&kp TILDE     &kp MINUS  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp BACKSLASH    &kp PLUS   &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp PIPE
+&kp CAPSLOCK  &trans     &trans                &trans          &kp PAGE_UP       &kp HOME         &kp END    &kp PAGE_DOWN      &kp LT           &kp GT                 &trans     &trans
+                                               &trans          &trans            &trans           &trans     &trans             &trans
             >;
         };
 
