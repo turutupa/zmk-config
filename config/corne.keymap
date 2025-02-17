@@ -88,10 +88,10 @@
             //                    |     |  0  |          |            |      |      |      |
 
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0  &trans
-&trans  &trans        &trans        &trans        &trans        &trans    &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_PRV    &bt BT_NXT    &trans    &trans        &trans    &trans        &trans     &trans  &bt BT_CLR
-                                    &trans        &trans        &trans    &trans        &trans    &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7           &kp N8             &kp N9          &kp N0      &trans
+&trans  &kp MINUS     &kp PLUS      &kp ASTRK     &trans        &trans    &kp LEFT      &kp DOWN         &kp UP_ARROW       &kp RIGHT       &trans      &bt BT_CLR
+&trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_PRV    &bt BT_NXT    &trans    &trans        &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_PREVIOUS  &kp C_NEXT  &trans
+                                    &trans        &trans        &trans    &trans        &trans           &trans
             >;
         };
     };
